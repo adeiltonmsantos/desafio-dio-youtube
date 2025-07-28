@@ -1,36 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Clone YouTube</title>
     <link rel="stylesheet" href="/assets/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    <header>
+    <header class="container">
         <div class="container youtube">
-            <i class="fa-solid fa-bars fa-2xl"></i>
-            <img src="/assets/img/youtube 1.png" alt="Logo YouTube">
+            <img src="/assets/img/menu.svg" alt="Menu icon" id="menu">
+            <img src="/assets/img/youtube 1.png" alt="Logo YouTube" id="logo-youtube">
         </div>
-        
+
         <div class="search">
             <input type="text" name="search" id="search" class="search-input">
             <button class="btn-search">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </div>
-        <div class="container">
-
+        <div class="container profile-container">
+            <img src="/assets/img/video.png" class="icon-video" alt="">
+            <img src="/assets/img/notification.png" class="icon-notification" alt="">
+            <img src="/assets/img/profile.png" class="profile" alt="">
         </div>
     </header>
-    <main>
-        <section>
-
+    <main class="container">
+        <section class="video-frame">
+            <iframe width="900" height="507" src="https://www.youtube.com/embed/9aWSKlfL8EQ?si=JGGsjcP_8GkAzPRs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1>
+                Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS
+            </h1>
+            <div class="container interaction-panel">
+                <div class="container dio-info">
+                    <img src="/assets/img/Channel Avatar.png" alt="DIO logo">
+                    <div class="container">
+                        <strong>
+                            DIO
+                        </strong>
+                        <div>
+                            83.3 mil inscritos
+                        </div>
+                    </div>
+                </div>
+                <button>
+                    INSCREVA-SE
+                </button>
+                <div class="container interaction-option">
+                    <img src="/assets/img/like.png" alt="Like icon">
+                    <span>2 mil</span>
+                </div>
+                <div class="container interaction-option">
+                    <img src="/assets/img/unlike.png" alt="Unlike icon">
+                    <span>Não gostei</span>
+                </div>
+                <div class="container interaction-option">
+                    <img src="/assets/img/share.png" alt="">
+                    <span>
+                        Compartilhar
+                    </span>
+                </div>
+                <div class="container interaction-option">
+                    <img src="/assets/img/download.png" alt="">
+                    <span>Download</span>
+                </div>
+            </div>
+            <h4>
+                28.418 visualizações Transmitido ao vivo em 23 ago. de 2022
+            </h4>
+            <div class="resume">
+                Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page
+                com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light
+                e dark) para explorarmos os mistérios do mundo invertido.
+            </div>
         </section>
-        <aside>
-
+        <aside class="container">
+            <div class="container item">
+                <img src="/assets/img/item01.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item02.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item03.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item04.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item05.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item01.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item02.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item03.png" class="item" alt="">
+            </div>
+            <div class="container item">
+                <img src="/assets/img/item04.png" class="item" alt="">
+            </div>
         </aside>
     </main>
 </body>
+
 </html>

@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     box-sizing: border-box;
 }
 
 html{
     font-size: 62.5%;
+    font-family: Roboto;
 }
 
 body{
@@ -16,10 +19,13 @@ body{
     display: flex;
 }
 
+h1{
+    font-size: 1.9rem;
+}
+
 /* Header */
 
 header{
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.6rem 2.4rem;
@@ -27,17 +33,24 @@ header{
 
 .youtube{
     width: 14.6rem;
+    height: 2.4rem;;
     justify-content: space-between;
     align-items: center;
 }
 
-.youtube img{
+#menu{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+#logo-youtube{
     width: 9rem;
 }
 
 .search{
     display: flex;
     width: 40.4rem;
+    height: 3.5rem;;
     border: 0.1rem solid #CCCCCC;
 }
 
@@ -51,13 +64,124 @@ header{
     flex-grow: 0;
     border: 0 none transparent;
     background-color: #F8F8F8;
+    width: 5.7rem;
 }
 
 .search-input{
     outline: none;
 }
 
+.profile-container{
+    width: 13rem;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.icon-video, .icon-notification{
+    width: 2.4rem;
+    height: 2.4rem;
+}
 
+.profile{
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+}
 
+/* Main */
 
+main{
+    margin-top: 1rem;
+    column-gap: 1rem;
+}
+
+.video-frame{
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 7.5rem;
+}
+
+.interaction-panel{
+    justify-content: space-between;
+    width: 95%;
+}
+
+.interaction-panel button{
+    background-color: #cc0000;
+    color: #ffffff;
+    border: 0 none transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    width: 13rem;
+}
+
+.dio-info{
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 14rem;
+}
+
+.dio-info img{
+    width: 4.2rem;
+    height: 4.2rem;
+}
+
+.dio-info div{
+    flex-direction: column;
+}
+
+.interaction-option{
+    gap: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.interaction-option img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+#menu:hover,
+#logo-youtube:hover,
+.interaction-option img:hover,
+.interaction-panel button:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+.interaction-option span, .share span{
+    font-weight: 600;
+}
+
+.share{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.share img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.resume{
+    width: 60%;
+    font-size: 1.4rem;
+}
+
+/* Aside */
+aside{
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 2rem;
+}
+
+.item{
+    height: 8.2rem;
+}
+
+.item:hover{
+    cursor: pointer;
+    filter: brightness(0.8);
+}
