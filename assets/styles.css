@@ -31,7 +31,7 @@ header{
     padding: 1.6rem 2.4rem;
 }
 
-.youtube{
+.youtube-menu{
     width: 14.6rem;
     height: 2.4rem;;
     justify-content: space-between;
@@ -77,7 +77,7 @@ header{
     align-items: center;
 }
 
-.icon-video, .icon-notification{
+.icon-profile-container{
     width: 2.4rem;
     height: 2.4rem;
 }
@@ -143,8 +143,10 @@ main{
     height: 1.8rem;
 }
 
+.btn-search:hover,
 #menu:hover,
 #logo-youtube:hover,
+.profile-container:hover,
 .interaction-option img:hover,
 .interaction-panel button:hover{
     cursor: pointer;
