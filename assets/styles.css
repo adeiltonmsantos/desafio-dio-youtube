@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Geral */
+.container{
+    display: flex;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+}
+
+.youtube{
+    width: 14.6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.youtube img{
+    width: 9rem;
+}
+
+.search{
+    display: flex;
+    width: 40.4rem;
+    border: 0.1rem solid #CCCCCC;
+}
+
+.search-input{
+    flex-grow: 1;
+    border: 0 none transparent;
+    background-color: #FFFFFF;
+}
+
+.btn-search{
+    flex-grow: 0;
+    border: 0 none transparent;
+    background-color: #F8F8F8;
+}
+
+.search-input{
+    outline: none;
+}
+
+
+
+
+
